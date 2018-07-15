@@ -36,7 +36,7 @@
                 </when>
                 <when>
                     <simple>${in.header.SOAPAction} contains 'getAllCustomers'</simple>
-                    <bean ref="beanService" method="getAllCustomers"/>
+                    <bean ref="beanService" method="getCustomers"/>
                 </when>
             </choice>
             <marshal ref="soapFormat"/>
